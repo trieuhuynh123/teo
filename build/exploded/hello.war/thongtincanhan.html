@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Trang Web Cá Nhân</title>
+        <meta charset="utf-8">
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const menuIcon = document.getElementById('menu-icon');
+                const menuContent = document.getElementById('menu-content');
+                var links = document.querySelectorAll(".nav a");
+                menuIcon.addEventListener('click', function () {
+                    if (menuContent.style.marginLeft === '-30px') {
+                        menuContent.style.marginLeft = '-320px';
+                    } else {
+                        menuContent.style.marginLeft = '-30px';
+                    }
+                });
+                document.querySelector('.link[href="#info"]').addEventListener('click', function () {
+                    // Thực hiện hành động khi người dùng nhấp vào "Thông tin cá nhân"
+                    menuIcon.click();
+                });
+
+                document.querySelector('.link[href="#homework"]').addEventListener('click', function () {
+                    // Thực hiện hành động khi người dùng nhấp vào "Bài tập"
+                    menuIcon.click();
+                });
+
+
+            });
+
+        </script>
+        <link rel="stylesheet" href="main.css" type="text/css" />
+    </head>
+    <body style=" background-color: #333;">
+        <div style="margin-left:15px ;">
+            <div class="nav-bar">
+                <div style="margin-left:15px ;">
+                    <div class="menu-content" id="menu-content">
+                        <div id="menu-icon">&#9776;</div>
+                        <nav>
+                            <ul>
+                                <li style="margin-top:60px ;" >
+                                    <a class = link href="#info">Thông tin cá nhân</a>
+                                </li>
+                                <li>
+                                    <a class = link href="#homework">Bài tập</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <header>
+                </header>
+                <b>LẬP TRÌNH WEB</b><br>
+                <img id=logo src="image/logo.png" alt="Logo trÆ°á»�ng" width="100%">
+                <div class="nav-bar">
+                    <section id="info">
+                        <b>Thông tin cá nhân</b>
+                        <img id=avt src="image/avt.png" alt="avt" style=" width: 300px; height: 350px">
+                        <p>Tên: Huỳnh Ngọc Triệu</p>
+                        <p>Mã số sinh viên: 21110857</p>
+                    </section>
+                    <section id="homework">
+                        <b>Bài tập</b>
+                        <a class="button-link" href="/hello/tuan4.html">Survey, 6.2</a><br>
+                        <a class="button-link" href="/hello/5_2.html">5.2</a><br>
+                        <a class="button-link" href="/hello/5_1.jsp">5.1, 6.1, 8.1</a><br>
+                        <a class="button-link" href="/hello/7_1.jsp">7.1, 7.2, 9.1</a><br>
+                        <a class="button-link" href="/hello/7_3.jsp">7.3, 9.2</a><br>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

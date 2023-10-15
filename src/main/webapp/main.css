@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.info-box {
+    border: 2px solid #333;
+    /* Border style and color */
+    padding: 10px;
+    /* Add some padding to the box */
+    border-radius: 10px;
+    width: 400px;
+}
+
+.button-link {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 8px 12px;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+}
+#menu-content {
+    list-style: none;
+    padding: 0;
+}
+
+#menu-content li {
+    margin: 10px 0;
+}
+
+#menu-content a {
+    text-decoration: none;
+    color: #a3e70f;
+    transition: color 0.3s;
+    font-size: 20px;
+}
+
+#menu-content a:hover {
+    color: #ececec;
+}
+b {
+    font-size: 35px;
+    animation: colorChange 6s linear infinite;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes colorChange {
+    0% {
+        color: red;
+    }
+
+    20% {
+        color: orange;
+    }
+
+    40% {
+        color: yellow;
+    }
+
+    60% {
+        color: green;
+    }
+
+    80% {
+        color: blue;
+    }
+
+    100% {
+        color: violet;
+    }
+}
+p{
+    color: #f39c12;
+}
+.button-link:hover {
+    background-color: #0056b3;
+    /* Change the background color on hover */
+}
+
+label {
+    float: left;
+    width: 6em;
+    margin-bottom: 0.5em;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 15em;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+
+    br {
+        clear: both;
+    }
+}
+
+#submit {
+    margin-left: 0.5em;
+}
+
+.ra {
+    display: inline-block;
+    width: 300px;
+}
+
+.ch {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+h1 {
+    color: teal;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#menu-icon {
+    font-size: 35px;
+    display: inline-block;
+    color: aliceblue;
+    transition: background-color 0.5s ease;
+    border-radius: 50%;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    cursor: pointer;
+}
+.menu-content {
+    position: fixed;
+    display: none;
+    background-color: #333;
+    width: 300px;
+    height: 100%;
+    margin-left: -320px;
+    transition: margin-left 0.5s;
+    display: block;
+    top : 0;
+}
+#menu-icon:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
